@@ -1,0 +1,31 @@
+header {
+  background-color: #F3F3F3;
+  border: none;
+  border-top: 0.2rem solid red;
+}
+
+.nav__bar1 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style-type: none;
+}
+.nav__items {
+  display: inline-block;
+  padding: 1.3rem;
+  color: #333232;
+}
+
+* {
+  margin: inherit;
+  padding: inherit;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  line-height: 1.1;
+}
+
+/*# sourceMappingURL=style.css.map */

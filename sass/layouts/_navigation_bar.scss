@@ -1,0 +1,22 @@
+header {
+    background-color: #F3F3F3;
+    border: none;
+    border-top: .2rem solid red;
+}
+
+.nav {
+    &__bar1 {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        list-style-type: none;
+    }
+
+    &__items {
+        display: inline-block;
+        padding: 1.3rem;
+        color: #333232;
+
+    }
+}

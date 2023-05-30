@@ -4,6 +4,7 @@
   "description": "A ecommerce website practice",
   "main": "index.js",
   "scripts": {
+    "compile:sass": "sass --watch sass/main.scss css/style.css",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -14,5 +15,8 @@
   "license": "ISC",
   "devDependencies": {
     "node-sass": "^9.0.0"
+  },
+  "dependencies": {
+    "sass": "^1.62.1"
   }
 }
