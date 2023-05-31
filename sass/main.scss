@@ -1,4 +1,15 @@
 
-@import "layouts/navigation_bar";
 
-@import "pages/home.scss"
+@import "abstracts/functions";
+@import "abstracts/mixins";
+@import "abstracts/variables";
+
+@import "base/animation";
+@import "base/base";
+@import "base/typography";
+@import "base/utilities";
+
+@import "layouts/navigation_bar";
+@import "layouts/footer";
+
+@import "pages/home.scss";
