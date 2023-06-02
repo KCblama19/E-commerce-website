@@ -1,9 +1,3 @@
-header {
-    background-color: $secondary-color;
-    border: none;
-    border-top: .3rem solid $primary-color;
-}
-
 .nav {
     &__bar1 {
         display: flex;
@@ -15,6 +9,10 @@ header {
         margin: 0;
 
         font-size: 1.4rem;
+
+        background-color: $secondary-color-gray;
+        border: none;
+        border-top: .3rem solid $primary-color-red;
     }
 
     &__items {
@@ -55,7 +53,7 @@ header {
     }
 
     &__items:hover {
-        color: $primary-color;
+        color: $primary-color-red;
     }
 
     &__items--custom {
@@ -63,7 +61,7 @@ header {
         position: relative;
         display: inline-block;
 
-        background-color: $tertiary-color;
+        background-color: $tertiary-color-white;
         padding: 1.8rem .8rem;
         color: $secondary-text-color;
         opacity: 0;
@@ -112,5 +110,77 @@ header {
         visibility: visible;
         top: 5.2rem;
     }
+}
+
+.nav {
+    &__bar2 {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        position: relative;
+
+        list-style-type: none;
+        margin: 0;
+
+        font-size: 1.4rem;
+        font-weight: 500;
+        padding: .8em 0;
+
+    }
+
+    &__form {
+        display: flex;
+        align-items: center;
+
+        & > button[type=submit]{
+            padding: .8rem 1.3rem;
+            outline: none;
+            border: none;
+            background-color: $primary-color-red;
+            border-radius: 4px;
+            color: $tertiary-color-white;
+        }
+    }
+
+    &__search-container {
+        display: inline-block;
+    }
+
+    &__search-bar, 
+    &__search-bar:active{
+        padding: 1.7rem;
+        padding-right: 15rem;
+        display: inline-block;
+        outline: none;
+        border: none;
+        border: 2px solid $secondary-color-gray;
+    }
+
+
+}
+
+.dropdown > button{
+    background-color: $tertiary-color-white;
+    color: $text-color-black;
+    display: inline-block;
+    padding: 1.5rem;
+    padding-right: 4rem;
+    margin: 0;
+    border: none;
+    border: 2px solid $secondary-color-gray;
+    margin-left: -.4rem;
+    font-size: 1.3rem;
+    color: $text-color-tertiary;
+}
+
+.dropdown > button:hover{
+    background-color: $tertiary-color-white;
+    color: $text-color-black;
+    display: inline-block;
+    padding: 1.7rem;
+    margin: 0;
+    border: none;
+    border: 2px solid $secondary-color-gray;
+    margin-left: -.4rem;
 }
 

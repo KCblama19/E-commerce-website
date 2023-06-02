@@ -21,12 +21,6 @@ body {
   line-height: 1.1;
 }
 
-header {
-  background-color: #F3F3F3;
-  border: none;
-  border-top: 0.3rem solid #E52E06;
-}
-
 .nav__bar1 {
   display: flex;
   justify-content: space-around;
@@ -35,6 +29,9 @@ header {
   list-style-type: none;
   margin: 0;
   font-size: 1.4rem;
+  background-color: #F3F3F3;
+  border: none;
+  border-top: 0.3rem solid #E52E06;
 }
 .nav__items {
   display: inline-block;
@@ -118,6 +115,66 @@ header {
   opacity: 1;
   visibility: visible;
   top: 5.2rem;
+}
+
+.nav__bar2 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+  list-style-type: none;
+  margin: 0;
+  font-size: 1.4rem;
+  font-weight: 500;
+  padding: 0.8em 0;
+}
+.nav__form {
+  display: flex;
+  align-items: center;
+}
+.nav__form > button[type=submit] {
+  padding: 0.8rem 1.3rem;
+  outline: none;
+  border: none;
+  background-color: #E52E06;
+  border-radius: 4px;
+  color: #fff;
+}
+.nav__search-container {
+  display: inline-block;
+}
+.nav__search-bar, .nav__search-bar:active {
+  padding: 1.7rem;
+  padding-right: 15rem;
+  display: inline-block;
+  outline: none;
+  border: none;
+  border: 2px solid #F3F3F3;
+}
+
+.dropdown > button {
+  background-color: #fff;
+  color: #000;
+  display: inline-block;
+  padding: 1.5rem;
+  padding-right: 4rem;
+  margin: 0;
+  border: none;
+  border: 2px solid #F3F3F3;
+  margin-left: -0.4rem;
+  font-size: 1.3rem;
+  color: #505050;
+}
+
+.dropdown > button:hover {
+  background-color: #fff;
+  color: #000;
+  display: inline-block;
+  padding: 1.7rem;
+  margin: 0;
+  border: none;
+  border: 2px solid #F3F3F3;
+  margin-left: -0.4rem;
 }
 
 /*# sourceMappingURL=style.css.map */

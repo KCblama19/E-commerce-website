@@ -20,6 +20,7 @@
 </head>
 <body>
     <header>
+        <!--FIRST NAVBAR-->
         <ul class="nav__bar1">
             <div>
                 <li class="nav__items"><ion-icon name="location-outline" class=nav__icons--1></ion-icon>Store Direction</li>
@@ -31,6 +32,36 @@
 
                 <li class="nav__items--custom nav__items--lang">Italiano</li>
                 <li class="nav__items--custom nav__items--currency">EUR</li>
+                
+            </div>
+        </ul>
+
+        <!--SECOND NAVBAR-->
+        <ul class="nav__bar2">
+            <div>
+                <img src="http://ledthanhdat.vn/html/kobolg/assets/images/logo.png" alt="Logo">
+            </div>
+
+            <div class="nav__search-container">
+                <form action="/action_page.php" class="nav__form">
+                    <input type="text" placeholder="Search here..." name="search" class="nav__search-bar">
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Dropdown button
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </div>
+                    <button type="submit"><ion-icon name="search-outline"></ion-icon></button>
+                </form>
+            </div>
+
+            <div>
+                <ion-icon name="person-outline"></ion-icon>
+                <ion-icon name="cart-outline"></ion-icon>
                 
             </div>
         </ul>
