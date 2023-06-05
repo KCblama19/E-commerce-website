@@ -22,21 +22,110 @@ body {
 }
 
 .nav__bar1 {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  position: relative;
-  list-style-type: none;
-  margin: 0;
   font-size: 1.4rem;
   background-color: #F3F3F3;
   border: none;
   border-top: 0.3rem solid #E52E06;
 }
 .nav__items {
+  color: #5f5e5e;
+}
+.nav__items ion-icon {
+  font-size: 2.5rem;
+  font-weight: 100;
+  padding: 0;
+}
+.nav__items .nav__icons--3 {
+  font-size: 1.3rem;
+}
+.nav__items .nav__icons--4 {
+  font-size: 1.3rem;
+}
+.nav__items:hover {
+  color: #E52E06;
+}
+.nav__items--custom {
+  background-color: #fff;
+  padding: 1.8rem 0.8rem;
+  color: #5f5e5e;
+  opacity: 0;
+  box-shadow: 0 0.14rem 4rem rgba(0, 0, 0, 0.14);
+}
+.nav__bar2 {
+  font-size: 1.4rem;
+  font-weight: 500;
+  padding: 0.8em 0;
+  margin: 0 auto;
+}
+.nav__form > button[type=submit] {
+  padding: 0.9rem 1.3rem;
+  outline: none;
+  border: none;
+  background-color: #E52E06;
+  border-radius: 4px;
+  color: #fff;
+  margin-left: -0.5rem;
+  z-index: 1;
+}
+.nav__search-bar, .nav__search-bar:active {
+  font-weight: 500;
+  border: none;
+  border: 2px solid #F3F3F3;
+  color: #a3a3a3;
+  outline: none;
+  padding: 1.7rem;
+  padding-right: 15rem;
+}
+
+.dropdown > button,
+.dropdown button:active {
+  font-size: 1.3rem;
+  font-weight: 500;
+  background-color: #fff !important;
+  color: #a3a3a3 !important;
+  outline: none;
+  border: none;
+  border: 2px solid #F3F3F3 !important;
+  padding: 1.5rem;
+  padding-right: 4rem;
+  margin: 0;
+  margin-left: -0.4rem;
+}
+.dropdown > button:hover,
+.dropdown button:focus {
+  background-color: #fff;
+  color: #000;
+  border: none;
+  border: 2px solid #F3F3F3;
+  padding: 1.5rem;
+  padding-right: 4rem;
+  margin: 0;
+  margin-left: -0.4rem;
+}
+.dropdown .dropdown-menu {
+  font-size: 1.4rem;
+  padding: 0.8rem 0.3rem;
+  border: none;
+  box-shadow: 0 0.4rem 0.6rem rgba(0, 0, 0, 0.1);
+  margin-top: -0.3rem !important;
+  z-index: -1;
+}
+.dropdown .dropdown-item {
+  font-weight: 500;
+  color: #a3a3a3;
+}
+
+.nav__bar1 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+  list-style-type: none;
+  margin: 0;
+}
+.nav__items {
   display: inline-block;
   padding: 1.8rem 2.5rem;
-  color: #5f5e5e;
   position: relative;
 }
 .nav__items ion-icon {
@@ -55,42 +144,20 @@ body {
   left: -0.5rem;
 }
 .nav__items .nav__icons--3 {
-  font-size: 1.3rem;
   position: absolute;
   top: 1.9rem;
   right: 0.8rem;
 }
 .nav__items .nav__icons--4 {
-  font-size: 1.3rem;
   position: absolute;
   top: 1.9rem;
   right: 0.8rem;
-}
-.nav__items:hover {
-  color: #E52E06;
 }
 .nav__items--custom {
   width: 16rem;
   position: relative;
   display: inline-block;
-  background-color: #fff;
-  padding: 1.8rem 0.8rem;
-  color: #5f5e5e;
-  opacity: 0;
-  box-shadow: 0 0.14rem 4rem rgba(0, 0, 0, 0.14);
   transition: all 0.2s;
-}
-.nav__items--custom .nav__icons--3 {
-  font-size: 1.3rem;
-  position: absolute;
-  top: 0.2rem;
-  right: -1.5rem;
-}
-.nav__items--custom .nav__icons--4 {
-  font-size: 1.3rem;
-  position: absolute;
-  top: 0;
-  right: -1.5rem;
 }
 .nav__items--lang {
   position: absolute;
@@ -116,65 +183,35 @@ body {
   visibility: visible;
   top: 5.2rem;
 }
-
 .nav__bar2 {
+  width: 135rem;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   position: relative;
   list-style-type: none;
-  margin: 0;
-  font-size: 1.4rem;
-  font-weight: 500;
-  padding: 0.8em 0;
 }
 .nav__form {
   display: flex;
   align-items: center;
 }
-.nav__form > button[type=submit] {
-  padding: 0.8rem 1.3rem;
-  outline: none;
-  border: none;
-  background-color: #E52E06;
-  border-radius: 4px;
-  color: #fff;
-}
 .nav__search-container {
   display: inline-block;
 }
 .nav__search-bar, .nav__search-bar:active {
-  padding: 1.7rem;
-  padding-right: 15rem;
   display: inline-block;
-  outline: none;
-  border: none;
-  border: 2px solid #F3F3F3;
 }
 
-.dropdown > button {
-  background-color: #fff;
-  color: #000;
+.dropdown > button,
+.dropdown button:active {
   display: inline-block;
-  padding: 1.5rem;
-  padding-right: 4rem;
-  margin: 0;
-  border: none;
-  border: 2px solid #F3F3F3;
-  margin-left: -0.4rem;
-  font-size: 1.3rem;
-  color: #505050;
 }
-
-.dropdown > button:hover {
-  background-color: #fff;
-  color: #000;
+.dropdown > button:hover,
+.dropdown button:focus {
   display: inline-block;
-  padding: 1.7rem;
-  margin: 0;
-  border: none;
-  border: 2px solid #F3F3F3;
-  margin-left: -0.4rem;
+}
+.dropdown .dropdown-menu {
+  width: 215px;
 }
 
 /*# sourceMappingURL=style.css.map */

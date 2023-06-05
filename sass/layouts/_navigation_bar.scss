@@ -1,4 +1,6 @@
 .nav {
+
+        // || NAVBAR #1 BEGINS HERE || //
     &__bar1 {
         display: flex;
         justify-content: space-around;
@@ -7,18 +9,11 @@
 
         list-style-type: none;
         margin: 0;
-
-        font-size: 1.4rem;
-
-        background-color: $secondary-color-gray;
-        border: none;
-        border-top: .3rem solid $primary-color-red;
     }
 
     &__items {
         display: inline-block;
         padding: 1.8rem 2.5rem;
-        color: $secondary-text-color;
 
         position: relative;
 
@@ -39,21 +34,15 @@
             left: -.5rem;
         }
         .nav__icons--3{
-            font-size: 1.3rem;
             position: absolute;
             top: 1.9rem;
             right: .8rem;
         }
         .nav__icons--4{
-            font-size: 1.3rem;
             position: absolute;
             top: 1.9rem;
             right: .8rem;
         }
-    }
-
-    &__items:hover {
-        color: $primary-color-red;
     }
 
     &__items--custom {
@@ -61,26 +50,7 @@
         position: relative;
         display: inline-block;
 
-        background-color: $tertiary-color-white;
-        padding: 1.8rem .8rem;
-        color: $secondary-text-color;
-        opacity: 0;
-
-        box-shadow: 0 .14rem 4rem rgba($text-color-black, 0.14);
         transition: all .2s;
-
-        .nav__icons--3{
-            font-size: 1.3rem;
-            position: absolute;
-            top: .2rem;
-            right: -1.5rem;
-        }
-        .nav__icons--4{
-            font-size: 1.3rem;
-            position: absolute;
-            top: 0;
-            right: -1.5rem;
-        }
     }
 
     &__items--lang {
@@ -110,36 +80,22 @@
         visibility: visible;
         top: 5.2rem;
     }
-}
 
-.nav {
+    // || NAVBAR #2 BEGINS HERE || //
     &__bar2 {
+        width: 135rem;
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
         align-items: center;
         position: relative;
 
         list-style-type: none;
-        margin: 0;
-
-        font-size: 1.4rem;
-        font-weight: 500;
-        padding: .8em 0;
 
     }
 
     &__form {
         display: flex;
         align-items: center;
-
-        & > button[type=submit]{
-            padding: .8rem 1.3rem;
-            outline: none;
-            border: none;
-            background-color: $primary-color-red;
-            border-radius: 4px;
-            color: $tertiary-color-white;
-        }
     }
 
     &__search-container {
@@ -148,39 +104,29 @@
 
     &__search-bar, 
     &__search-bar:active{
-        padding: 1.7rem;
-        padding-right: 15rem;
         display: inline-block;
-        outline: none;
-        border: none;
-        border: 2px solid $secondary-color-gray;
     }
 
 
 }
 
-.dropdown > button{
-    background-color: $tertiary-color-white;
-    color: $text-color-black;
-    display: inline-block;
-    padding: 1.5rem;
-    padding-right: 4rem;
-    margin: 0;
-    border: none;
-    border: 2px solid $secondary-color-gray;
-    margin-left: -.4rem;
-    font-size: 1.3rem;
-    color: $text-color-tertiary;
+// || DROPDOWN BUTTON IN NAVBAR #2 STYLE || //
+.dropdown {
+
+    & > button,
+    button:active {
+        display: inline-block;
+    }
+
+    & > button:hover,
+    button:focus {
+        display: inline-block;
+    }
+
+    .dropdown-menu {
+        width: 215px;
+    }
 }
 
-.dropdown > button:hover{
-    background-color: $tertiary-color-white;
-    color: $text-color-black;
-    display: inline-block;
-    padding: 1.7rem;
-    margin: 0;
-    border: none;
-    border: 2px solid $secondary-color-gray;
-    margin-left: -.4rem;
-}
+
 
