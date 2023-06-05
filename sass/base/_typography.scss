@@ -9,3 +9,125 @@ body {
     color: $secondary-text-color;
     line-height: 1.1;
 }
+
+// || NAVIGATION BARS TYPOGRAPHY(CONSIST NAVBAR #1 #2 #3) || //
+.nav {
+    // || NAVBAR #1 STARTS HERE || //
+    &__bar1 {
+        font-size: 1.4rem;
+
+        background-color: $secondary-color-gray;
+        border: none;
+        border-top: .3rem solid $primary-color-red;
+    }
+
+    &__items {
+        color: $secondary-text-color;
+
+        ion-icon {
+            font-size: 2.5rem;
+            font-weight: 100;
+            padding: 0;
+        }
+
+        .nav__icons--3 {
+            font-size: 1.3rem;
+        }
+        .nav__icons--4 {
+            font-size: 1.3rem;
+        }
+    }
+
+    &__items:hover {
+        color: $primary-color-red;
+    }
+
+    &__items--custom {
+        background-color: $tertiary-color-white;
+        padding: 1.8rem .8rem;
+        color: $secondary-text-color;
+        opacity: 0;
+
+        box-shadow: 0 .14rem 4rem rgba($text-color-black, 0.14);
+    }
+
+    // || NAVBAR #2 STARTS HERE || //
+    &__bar2 {
+        font-size: 1.4rem;
+        font-weight: 500;
+        padding: .8em 0;
+        margin: 0 auto;
+    }
+
+    &__form {
+
+        & > button[type=submit]{
+            padding: .9rem 1.3rem;
+            outline: none;
+            border: none;
+            background-color: $primary-color-red;
+            border-radius: 4px;
+            color: $tertiary-color-white;
+            margin-left: -.5rem;
+            z-index: 1;
+        }
+    }
+
+    &__search-bar, 
+    &__search-bar:active{
+        font-weight: 500;
+        border: none;
+        border: 2px solid $secondary-color-gray;
+        color: $text-color-tertiary;
+        outline: none;
+        padding: 1.7rem;
+        padding-right: 15rem;
+    }
+
+}
+
+// || DROPDOWN BUTTON IN NAVBAR #2 TYPOGRAPHY|| //
+
+.dropdown {
+
+    & > button,
+    button:active {
+        font-size: 1.3rem;
+        font-weight: 500;
+        background-color: $tertiary-color-white !important;
+        color: $text-color-tertiary !important;
+        outline: none;
+        border: none ;
+        border: 2px solid $secondary-color-gray !important;
+        padding: 1.5rem;
+        padding-right: 4rem;
+        margin: 0;
+        margin-left: -.4rem;
+    }
+
+    & > button:hover,
+    button:focus {
+        background-color: $tertiary-color-white;
+        color: $text-color-black;
+        border: none;
+        border: 2px solid $secondary-color-gray;
+        padding: 1.5rem;
+        padding-right: 4rem;
+        margin: 0;
+        margin-left: -.4rem;
+    }
+
+    .dropdown-menu {
+        font-size: 1.4rem;
+        padding: .8rem .3rem;
+        border: none;
+        box-shadow: 0 .4rem .6rem rgba($text-color-black, 0.1);
+        margin-top: -.3rem !important;
+        z-index: -1;
+    }
+
+    .dropdown-item {
+        font-weight: 500;
+        color: $text-color-tertiary;
+    }
+}
