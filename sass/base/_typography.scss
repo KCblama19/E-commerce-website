@@ -21,8 +21,17 @@ body {
         border-top: .3rem solid $primary-color-red;
     }
 
-    &__items {
+    &__link {
+        text-decoration: none;
         color: $secondary-text-color;
+        padding: 0;
+
+        &:hover {
+            color: $primary-color-red;
+        }
+    }
+
+    &__items {
 
         ion-icon {
             font-size: 2.5rem;
@@ -38,10 +47,6 @@ body {
         }
     }
 
-    &__items:hover {
-        color: $primary-color-red;
-    }
-
     &__items--custom {
         background-color: $tertiary-color-white;
         padding: 1.8rem .8rem;
@@ -55,14 +60,14 @@ body {
     &__bar2 {
         font-size: 1.4rem;
         font-weight: 500;
-        padding: .8em 0;
+        padding: 3.8rem 0;
         margin: 0 auto;
     }
 
     &__form {
 
         & > button[type=submit]{
-            padding: .9rem 1.3rem;
+            padding: 1.3rem 1.8rem;
             outline: none;
             border: none;
             background-color: $primary-color-red;
@@ -70,6 +75,7 @@ body {
             color: $tertiary-color-white;
             margin-left: -.5rem;
             z-index: 1;
+            cursor: default;
         }
     }
 
@@ -80,10 +86,66 @@ body {
         border: 2px solid $secondary-color-gray;
         color: $text-color-tertiary;
         outline: none;
-        padding: 1.7rem;
-        padding-right: 15rem;
+        padding: 1.9rem;
+        padding-right: 18rem;
     }
 
+    &__icons { 
+        color: $text-color-black;
+        font-size: 2.6rem;
+        padding: 0;
+        padding: 0 1.5rem;
+
+        &:hover {
+            color: $primary-color-red;
+        }
+    }
+
+    &__icons--search {
+        font-size: 2.6rem;
+    }
+
+    &__icons-count { 
+        padding: .5rem .8rem;
+        background-color: $primary-color-red;
+        border-radius: 50%;
+        text-align: center;
+        font-size: 1.2rem;
+        color: $tertiary-color-white;
+    }
+
+    // || NAVBAR #2 STARTS HERE || //
+    
+    &__bar3 {
+        padding: 1rem 0;
+        border: none;
+        border-top: 1px solid $secondary-color-gray;
+        border-bottom: 1px solid $secondary-color-gray;
+        z-index: -3;
+
+        &--item {
+            text-decoration: none;
+            color: $text-color-black;
+            display: inline-block;
+            font-size: 1.8rem;
+            padding-right: 1.8rem;
+
+            &:hover {
+                color: $primary-color-red;
+            }
+        }
+
+        span {
+            position: relative;
+            padding: 0;
+            margin: 0;
+            font-size: 1.8rem;
+
+            &:hover {
+                color: $primary-color-red;
+            }
+        }
+    }
 }
 
 // || DROPDOWN BUTTON IN NAVBAR #2 TYPOGRAPHY|| //
@@ -99,7 +161,7 @@ body {
         outline: none;
         border: none ;
         border: 2px solid $secondary-color-gray !important;
-        padding: 1.5rem;
+        padding: 1.6rem;
         padding-right: 4rem;
         margin: 0;
         margin-left: -.4rem;
@@ -111,7 +173,7 @@ body {
         color: $text-color-black;
         border: none;
         border: 2px solid $secondary-color-gray;
-        padding: 1.5rem;
+        padding: 1.6rem;
         padding-right: 4rem;
         margin: 0;
         margin-left: -.4rem;
@@ -123,11 +185,22 @@ body {
         border: none;
         box-shadow: 0 .4rem .6rem rgba($text-color-black, 0.1);
         margin-top: -.3rem !important;
-        z-index: -1;
+        
     }
 
     .dropdown-item {
         font-weight: 500;
         color: $text-color-tertiary;
+        padding: 1.2rem;
+
+        &:hover,
+        &:active {
+            background-color: $tertiary-color-white;
+            color: $primary-color-red;
+        }
+    }
+
+    .dropdown-toggle {
+        font-size: 1.4rem;
     }
 }

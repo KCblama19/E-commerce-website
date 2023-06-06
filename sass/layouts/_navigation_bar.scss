@@ -13,7 +13,7 @@
 
     &__items {
         display: inline-block;
-        padding: 1.8rem 2.5rem;
+        padding: 2rem 3rem;
 
         position: relative;
 
@@ -25,25 +25,26 @@
 
         .nav__icons--1{
             position: absolute;
-            top: 1rem;
+            top: 1.3rem;
             left: -.5rem;
         }
         .nav__icons--2{
             position: absolute;
-            top: 1rem;
+            top: 1.3rem;
             left: -.5rem;
         }
         .nav__icons--3{
             position: absolute;
-            top: 1.9rem;
+            top: 2rem;
             right: .8rem;
         }
         .nav__icons--4{
             position: absolute;
-            top: 1.9rem;
+            top: 2rem;
             right: .8rem;
         }
     }
+
 
     &__items--custom {
         width: 16rem;
@@ -81,9 +82,11 @@
         top: 5.2rem;
     }
 
+
+
     // || NAVBAR #2 BEGINS HERE || //
     &__bar2 {
-        width: 135rem;
+        width: 62%;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -107,6 +110,67 @@
         display: inline-block;
     }
 
+    &__icons--div {
+        position: relative;
+    }
+
+    &__icons {
+        display: inline-block;
+        cursor: pointer;
+    }
+    
+    &__icons-count {
+        display: inline-block;
+        position: absolute;
+        top: -1rem;
+        right: 0;
+        z-index: 10;
+    }
+
+
+
+    // || NAVBAR #3 BEGINS HERE || //
+
+    &__bar3 {
+        &--container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 62%;
+            margin: 0 auto;
+            z-index: -3;
+        }
+
+        &--sort {
+            background-color: $primary-color-red;
+            padding: 1.5rem 5rem;
+            color:$tertiary-color-white;
+            border-radius: 4px ;
+        }
+
+        &--main {
+            list-style-type: none;
+            margin: 0;
+        }
+
+        &--item {
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        span {
+            position: relative;
+        }
+    }
+
+    &__icons--boat {
+        font-size: 2.5rem;
+        position: absolute;
+        top: -.4rem;
+        left: -3rem;
+    }
+
+    
 
 }
 

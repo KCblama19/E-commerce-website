@@ -23,15 +23,31 @@
         <!--FIRST NAVBAR-->
         <ul class="nav__bar1">
             <div>
-                <li class="nav__items"><ion-icon name="location-outline" class=nav__icons--1></ion-icon>Store Direction</li>
-                <li class="nav__items"><ion-icon name="share-outline" class=nav__icons--2></ion-icon>Order Tracking</li>
-            </div>
-            <div>
-                <li class="nav__items nav__items--english">English<ion-icon name="chevron-down-outline" class=nav__icons--3></ion-icon></li>
-                <li class="nav__items nav__items--USD">USD<ion-icon name="chevron-down-outline" class=nav__icons--4></ion-icon></li>
+                <li class="nav__items"> 
+                    <a href="#" class="nav__link"><ion-icon name="location-outline" class=nav__icons--1></ion-icon>Store Direction</a>
+                </li>
 
-                <li class="nav__items--custom nav__items--lang">Italiano</li>
-                <li class="nav__items--custom nav__items--currency">EUR</li>
+                <li class="nav__items"> 
+                    <a href="#" class="nav__link"><ion-icon name="share-outline" class=nav__icons--2></ion-icon>Order Tracking</a>
+                </li>
+            </div>
+            
+            <div>
+                <li class="nav__items nav__items--english"> 
+                    <a href="#" class="nav__link">English<ion-icon name="chevron-down-outline" class=nav__icons--3></ion-icon></a>
+                </li>
+
+                <li class="nav__items nav__items--USD">
+                    <a href="#" class="nav__link">USD<ion-icon name="chevron-down-outline" class=nav__icons--4></ion-icon></a>
+                </li>
+
+                <li class="nav__items--custom nav__items--lang"> 
+                    <a href="#" class="nav__link">Italiano</a>
+                </li>
+
+                <li class="nav__items--custom nav__items--currency"> 
+                    <a href="#" class="nav__link">EUR</a>
+                </li>
                 
             </div>
         </ul>
@@ -47,7 +63,7 @@
                     <input type="text" placeholder="Search here..." name="search" class="nav__search-bar">
                     <div class="dropdown">
                         <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Dropdown button
+                            All Categories
                         </button>
                         <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="#">Action</a></li>
@@ -55,16 +71,37 @@
                             <li><a class="dropdown-item" href="#">Something else here</a></li>
                         </ul>
                     </div>
-                    <button type="submit"><ion-icon name="search-outline"></ion-icon></button>
+                    <button type="submit"><ion-icon name="search-outline" class="nav__icons--search"></ion-icon></button>
                 </form>
             </div>
 
-            <div>
-                <ion-icon name="person-outline"></ion-icon>
-                <ion-icon name="cart-outline"></ion-icon>
-                
+            <div class="nav__icons--div">
+                <a href="#"> <ion-icon name="person-outline" class="nav__icons"></ion-icon></a>
+                <a href="#"> <ion-icon name="cart-outline" class="nav__icons "></ion-icon></a>
+                <a href="#"> <span class="nav__icons-count">3</span></a>
             </div>
         </ul>
+
+        <!--THIRD NAVBAR-->
+
+        <div class="nav__bar3">
+            <div class="nav__bar3--container">
+                <div class="nav__bar3--sort">
+                    <h2>SHOP BY CATEGORIES</h2>
+                </div>
+
+                <ul class="nav__bar3--main">
+                    <li class="nav__bar3--item"><a href="#" class="nav__bar3--item">Home</a> </li>
+                    <li class="nav__bar3--item"><a href="#" class="nav__bar3--item">Shop</a> </li>
+                    <li class="nav__bar3--item"><a href="#" class="nav__bar3--item">Elements</a> </li>
+                    <li class="nav__bar3--item"><a href="#" class="nav__bar3--item">Blog</a> </li>
+                    <li class="nav__bar3--item"><a href="#" class="nav__bar3--item">Pages</a> </li>
+                </ul>
+
+                <span><ion-icon name="boat-outline" class="nav__icons--boat"></ion-icon>Free Shipping on Orders $100</span>
+        
+            </div>
+        </div>
     </header>
 
     <!--BOOTSTRAP JS-->
