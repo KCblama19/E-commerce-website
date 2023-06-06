@@ -1,6 +1,6 @@
 * {
-  margin: inherit;
-  padding: inherit;
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
@@ -27,8 +27,13 @@ body {
   border: none;
   border-top: 0.3rem solid #E52E06;
 }
-.nav__items {
+.nav__link {
+  text-decoration: none;
   color: #5f5e5e;
+  padding: 0;
+}
+.nav__link:hover {
+  color: #E52E06;
 }
 .nav__items ion-icon {
   font-size: 2.5rem;
@@ -41,9 +46,6 @@ body {
 .nav__items .nav__icons--4 {
   font-size: 1.3rem;
 }
-.nav__items:hover {
-  color: #E52E06;
-}
 .nav__items--custom {
   background-color: #fff;
   padding: 1.8rem 0.8rem;
@@ -54,11 +56,11 @@ body {
 .nav__bar2 {
   font-size: 1.4rem;
   font-weight: 500;
-  padding: 0.8em 0;
+  padding: 3.8rem 0;
   margin: 0 auto;
 }
 .nav__form > button[type=submit] {
-  padding: 0.9rem 1.3rem;
+  padding: 1.3rem 1.8rem;
   outline: none;
   border: none;
   background-color: #E52E06;
@@ -66,6 +68,7 @@ body {
   color: #fff;
   margin-left: -0.5rem;
   z-index: 1;
+  cursor: default;
 }
 .nav__search-bar, .nav__search-bar:active {
   font-weight: 500;
@@ -73,8 +76,54 @@ body {
   border: 2px solid #F3F3F3;
   color: #a3a3a3;
   outline: none;
-  padding: 1.7rem;
-  padding-right: 15rem;
+  padding: 1.9rem;
+  padding-right: 18rem;
+}
+.nav__icons {
+  color: #000;
+  font-size: 2.6rem;
+  padding: 0;
+  padding: 0 1.5rem;
+}
+.nav__icons:hover {
+  color: #E52E06;
+}
+.nav__icons--search {
+  font-size: 2.6rem;
+}
+.nav__icons-count {
+  padding: 0.5rem 0.8rem;
+  background-color: #E52E06;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 1.2rem;
+  color: #fff;
+}
+.nav__bar3 {
+  padding: 1rem 0;
+  border: none;
+  border-top: 1px solid #F3F3F3;
+  border-bottom: 1px solid #F3F3F3;
+  z-index: -3;
+}
+.nav__bar3--item {
+  text-decoration: none;
+  color: #000;
+  display: inline-block;
+  font-size: 1.8rem;
+  padding-right: 1.8rem;
+}
+.nav__bar3--item:hover {
+  color: #E52E06;
+}
+.nav__bar3 span {
+  position: relative;
+  padding: 0;
+  margin: 0;
+  font-size: 1.8rem;
+}
+.nav__bar3 span:hover {
+  color: #E52E06;
 }
 
 .dropdown > button,
@@ -86,7 +135,7 @@ body {
   outline: none;
   border: none;
   border: 2px solid #F3F3F3 !important;
-  padding: 1.5rem;
+  padding: 1.6rem;
   padding-right: 4rem;
   margin: 0;
   margin-left: -0.4rem;
@@ -97,7 +146,7 @@ body {
   color: #000;
   border: none;
   border: 2px solid #F3F3F3;
-  padding: 1.5rem;
+  padding: 1.6rem;
   padding-right: 4rem;
   margin: 0;
   margin-left: -0.4rem;
@@ -108,11 +157,18 @@ body {
   border: none;
   box-shadow: 0 0.4rem 0.6rem rgba(0, 0, 0, 0.1);
   margin-top: -0.3rem !important;
-  z-index: -1;
 }
 .dropdown .dropdown-item {
   font-weight: 500;
   color: #a3a3a3;
+  padding: 1.2rem;
+}
+.dropdown .dropdown-item:hover, .dropdown .dropdown-item:active {
+  background-color: #fff;
+  color: #E52E06;
+}
+.dropdown .dropdown-toggle {
+  font-size: 1.4rem;
 }
 
 .nav__bar1 {
@@ -125,7 +181,7 @@ body {
 }
 .nav__items {
   display: inline-block;
-  padding: 1.8rem 2.5rem;
+  padding: 2rem 3rem;
   position: relative;
 }
 .nav__items ion-icon {
@@ -135,22 +191,22 @@ body {
 }
 .nav__items .nav__icons--1 {
   position: absolute;
-  top: 1rem;
+  top: 1.3rem;
   left: -0.5rem;
 }
 .nav__items .nav__icons--2 {
   position: absolute;
-  top: 1rem;
+  top: 1.3rem;
   left: -0.5rem;
 }
 .nav__items .nav__icons--3 {
   position: absolute;
-  top: 1.9rem;
+  top: 2rem;
   right: 0.8rem;
 }
 .nav__items .nav__icons--4 {
   position: absolute;
-  top: 1.9rem;
+  top: 2rem;
   right: 0.8rem;
 }
 .nav__items--custom {
@@ -184,7 +240,7 @@ body {
   top: 5.2rem;
 }
 .nav__bar2 {
-  width: 135rem;
+  width: 62%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -200,6 +256,51 @@ body {
 }
 .nav__search-bar, .nav__search-bar:active {
   display: inline-block;
+}
+.nav__icons--div {
+  position: relative;
+}
+.nav__icons {
+  display: inline-block;
+  cursor: pointer;
+}
+.nav__icons-count {
+  display: inline-block;
+  position: absolute;
+  top: -1rem;
+  right: 0;
+  z-index: 10;
+}
+.nav__bar3--container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 62%;
+  margin: 0 auto;
+  z-index: -3;
+}
+.nav__bar3--sort {
+  background-color: #E52E06;
+  padding: 1.5rem 5rem;
+  color: #fff;
+  border-radius: 4px;
+}
+.nav__bar3--main {
+  list-style-type: none;
+  margin: 0;
+}
+.nav__bar3--item {
+  text-decoration: none;
+  display: inline-block;
+}
+.nav__bar3 span {
+  position: relative;
+}
+.nav__icons--boat {
+  font-size: 2.5rem;
+  position: absolute;
+  top: -0.4rem;
+  left: -3rem;
 }
 
 .dropdown > button,
